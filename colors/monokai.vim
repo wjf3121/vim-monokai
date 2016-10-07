@@ -300,4 +300,5 @@ call s:h("cInclude",                    { "fg": s:green })
 call s:h("cDefine",                     { "fg": s:green })
 
 " python
-call s:h("pyFuncArgs",          { "fg": s:orange, "format": "italic" })
+call s:h("pythonClassParameters",       { "fg": s:orange, "format": "italic" })
+call s:h("pythonFunctionParameters",    { "fg": s:orange, "format": "italic" })
