@@ -18,7 +18,7 @@ if ! exists("g:monokai_gui_italic")
 endif
 
 if ! exists("g:monokai_term_italic")
-    let g:monokai_term_italic = 0
+    let g:monokai_term_italic = 1
 endif
 
 let g:monokai_termcolors = 256 " does not support 16 color term right now.
@@ -298,3 +298,6 @@ call s:h("cStructure",                  { "fg": s:pink })
 call s:h("cStorageClass",               { "fg": s:pink })
 call s:h("cInclude",                    { "fg": s:green })
 call s:h("cDefine",                     { "fg": s:green })
+
+" python
+call s:h("pyFuncArgs",          { "fg": s:orange, "format": "italic" })
