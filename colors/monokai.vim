@@ -13,12 +13,14 @@ if !has("gui_running") && &t_Co < 256
   finish
 endif
 
+let g:monokai_gui_italic = 1
+let g:monokai_term_italic = 1
 if ! exists("g:monokai_gui_italic")
-    let g:monokai_gui_italic = 1
+    let g:monokai_gui_italic = 0
 endif
 
 if ! exists("g:monokai_term_italic")
-    let g:monokai_term_italic = 1
+    let g:monokai_term_italic = 0
 endif
 
 let g:monokai_termcolors = 256 " does not support 16 color term right now.
